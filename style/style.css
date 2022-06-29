@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&family=Open+Sans:ital,wght@1,300&family=Rajdhani:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Nunito:ital,wght@1,300&family=Open+Sans:ital,wght@1,300&family=Rajdhani:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Nunito:ital,wght@1,200;1,300&family=Open+Sans:ital,wght@1,300&family=Rajdhani:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: sans-serif; */
+}
+body{
+    background: url(bg2.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+.container{
+    width: 90%;
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+    height: 20%;
+}
+.nlogo{
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container button{
+    color: #fcfcfd;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    cursor: pointer; 
+    background: transparent;
+    padding: 10px 25px;
+    outline: none;
+    position: relative;
+}
+.container button::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.3s; 
+}
+.container button:hover::after{ 
+    width: 50%;
+    /* background-color: #fff; */
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    flex-wrap: wrap;
+    font-family: 'Dancing Script', cursive;
+}
+.description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    flex-wrap: wrap;
+    font-family: 'Nunito', sans-serif;
+}
+.workshop{
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.workshop button{
+    color: #fcfcfd;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    cursor: pointer; 
+    background: transparent;
+    padding: 10px 25px;
+    outline: none;
+    position: relative;
+}
+.workshop button::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.3s; 
+}
+.workshop button:hover::after{ 
+    width: 50%;
+    /* background-color: #fff; */
+}
